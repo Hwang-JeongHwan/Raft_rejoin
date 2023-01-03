@@ -1,0 +1,83 @@
+response time is 36, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 21, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 
+response time is 22, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 
+response time is 21, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 orderer5 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 24, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 25, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 18, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 13, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 24, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 13, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 
+response time is 25, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 18, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 13, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 23, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 31, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 21, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 15, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 24, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 19, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 22, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 18, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 21, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 18, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 19, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 27, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 15, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 15, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 29, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 31, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 21, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 18, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 19, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 23, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 41, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 13, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 20, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 14, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 25, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 11, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 22, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 16, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 14, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 14, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 19, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 26, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 16, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 22, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 24, Membership leader : orderer4, favorite : orderer2 orderer3  follower : orderer1 
+response time is 19, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
+response time is 15, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+response time is 31, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 
+deadtime is 50897, rejoin finish time is 894 
+response time is 2135, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 20, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 27, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 13, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 22, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
+response time is 17, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 

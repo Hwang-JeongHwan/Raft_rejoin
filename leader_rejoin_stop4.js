@@ -9,7 +9,7 @@ const fs1= require('fs');
 
 var timer_check = false;
 
-fs.writeFile('./ledger4.txt','start\n');
+fs.writeFile('./ledger4.txt','');
 var before_id = 0; //이전 아이디값을 저장하기 위한 변수 
 //var array = 0;
 //var array_cnt = 0;
@@ -19,7 +19,7 @@ var js_array =0; //제이슨으로 변환한 죽은 장부의 리턴
 var msg_array = 0;
 var flag = 0;
 var rejoin_start = 0;
-var  ledger = 'start \n';
+var  ledger = '';
 var counter = 0;
 var before_logindex =0; //이전값의 인덱스
 var before = 0; //이전 cnt값과 비교하기 위한 변수 // 트랜잭션에서 오는 카운트값과 이전 값을 비교하기위한 변수 
@@ -136,6 +136,7 @@ client.on('message', (msg, rinfo) => {
   if(i.id == 'app'&&i.value%10==9){
     before_state_check_leader = orderer_parse.state;
   }  
+ 
 //   if(i.id == 'app'&&i.value%10==0 &&orderer_parse.state == 'leader'&&before_state_check_leader == 'leader'){
 //     orderer_parse.state = 'follower'; // 오더러를 죽이고
 //     //beofre_state = 'leader'
@@ -210,7 +211,7 @@ client.on('message', (msg, rinfo) => {
     orderer_parse.rejoin = 'yes';//오더러의 rejoin이 yes고 append message를 처리했다면 장부를 복사해주어야함
     
     }
-  if(orderer_parse.rejoin == 'yes' &&i.copy!='ok' &&i.copy !='finish'){ 
+  if(orderer_parse.rejoin == 'yes' &&i.copy!='ok' &&i.copy !='finish' && (i.try == '1' || i.retry == '1')){ 
     console.log(check_cmledger_array);
     console.log(ar_length);
     console.log('check_cmledger_array[ar_length-1',check_cmledger_array[ar_length-2]);
@@ -335,6 +336,7 @@ client.on('message', (msg, rinfo) => {
     }
     //여기까지가 리조인 
     if (orderer_parse.state == 'leader' && i.append == 'yes'){
+      console.log('i.append',i.append,'\n\n\n\n\n')
       orderer_parse.stop = true;
       console.log(orderer_parse.stop)
       
@@ -502,7 +504,7 @@ client.on('message', (msg, rinfo) => {
     if(commitmsg.commit_cnt ==2 ){
       console.log('leaderchange');
       orderer_parse.state = 'leader';
-      orderer_parse.rejoin = 'dead';
+      //orderer_parse.rejoin = 'dead';
       commit_cnt.commit_cnt = 0;
       //before+=1;
       var commit_ledger = `key = ${checkcommit_msg.key} value = ${checkcommit_msg.value} cnt = ${checkcommit_msg.cnt}\n`

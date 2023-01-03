@@ -8,7 +8,7 @@ const fs = require('fs').promises;
 const fs1= require('fs');
 
 
-fs.writeFile('./ledger4.txt','start\n');
+fs.writeFile('./ledger4.txt','');
 var before_id = 0; //이전 아이디값을 저장하기 위한 변수 
 //var array = 0;
 //var array_cnt = 0;
@@ -18,7 +18,7 @@ var js_array =0; //제이슨으로 변환한 죽은 장부의 리턴
 var msg_array = 0;
 var flag = 0;
 var rejoin_start = 0;
-var  ledger = 'start \n';
+var  ledger = '';
 var counter = 0;
 var before_logindex =0; //이전값의 인덱스
 var before = 0; //이전 cnt값과 비교하기 위한 변수 // 트랜잭션에서 오는 카운트값과 이전 값을 비교하기위한 변수 
@@ -179,7 +179,7 @@ client.on('message', (msg, rinfo) => {
 
       
 
-  }
+  }// js_array.logindex==i.logindex 
     if(js_array.logindex==i.logindex &&orderer_parse.state =='rejoin'){ //장부복사가 끝낫다고 보내야함 
       var copy_finish = `{"id":"${i.id}","key":"${i.key}","value":${i.value},"logindex":${i.logindex},"term":${orderer_parse.term},
       "copy":"finish","leaderport":${i.leaderport},"finish":"finish"}`;
