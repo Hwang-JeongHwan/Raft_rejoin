@@ -63,7 +63,7 @@ client.bind({
 
   
   const check=(value,state,array,rejoin,wait)=>{
-    if(value == 20 && state == 'follower'){
+    if(value == 30 && state == 'follower'){
       console.log(value,'dead!!!!\n\n\n\n\n\n\n\n')
       
       orderer_parse.state = 'dead'; // 오더러를 죽이고
@@ -207,7 +207,7 @@ client.on('message', (msg, rinfo) => {
       
 
   }
-  if((i.logindex <= 20 ||js_array.logindex==i.logindex )&&orderer_parse.state =='rejoin'){ //장부복사가 끝낫다고 보내야함 
+  if((i.logindex <= 30 ||js_array.logindex==i.logindex )&&orderer_parse.state =='rejoin'){ //장부복사가 끝낫다고 보내야함 
       
       var copy_finish = `{"id":"${i.id}","key":"${i.key}","value":${i.value},"logindex":${i.logindex},"term":${orderer_parse.term},
       "copy":"finish","favorite1port":${i.favorite1port},"finish":"finish", "deadtime":${deadtime}}`;

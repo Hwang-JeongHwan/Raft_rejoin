@@ -615,7 +615,7 @@ response time is 8, Membership leader : orderer4, favorite : orderer1 orderer2  
 response time is 6, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
 response time is 6, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
 response time is 4, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 
-deadtime is 501492, rejoin finish time is 1515, filesize is 30636bytes  
+deadtime is 501462, rejoin finish time is 1446, filesize is 30636bytes  
 response time is 9, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
 response time is 7, Membership leader : orderer4, favorite : orderer1 orderer2  follower : orderer3 orderer5 
 response time is 7, Membership leader : orderer4, favorite : orderer1 orderer3  follower : orderer2 orderer5 

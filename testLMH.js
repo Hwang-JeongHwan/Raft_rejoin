@@ -216,12 +216,12 @@ server.on('message', (msg, rinfo) => {
         console.log('rejoincopy send to rejoin node',msg);
       })
     }
-    if(i.copy =='ok'){
-      server.send(msg,i,leaderport,HOST,()=>{
-        console.log('copy ok',msg);
+    // if(i.copy =='ok'){
+    //   server.send(msg,i,leaderport,HOST,()=>{
+    //     console.log('copy ok',msg);
 
-      })
-    }
+    //   })
+    // }
     if(i.finish == 'finish'){
       server.send(msg,i.leaderport,HOST,()=>{
         console.log('send finish',msg);

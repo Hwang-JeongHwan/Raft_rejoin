@@ -32,6 +32,11 @@ var check_cmledger_array = 0; //커밋렛져의 배열 ㄴ
 var ar_length = 0; //배열의 길이 
 //favorite을 위한 변수
 
+function getFilesizeInBytes(filename){
+  var stats = fs1.statSync(filename);
+  var filesizeInBytes = stats.size;
+  return filesizeInBytes;
+}
 var fav1 = 0;
 var fav2 = 0;
 
@@ -262,9 +267,12 @@ client.on('message', (msg, rinfo) => {
     console.log(orderer_parse.rejoin);
     orderer_parse.rejoin = 'no';
     check_cmledger_array = 0;
+    var filesize = getFilesizeInBytes('./ledger4.txt');
+
     var end = Date.now()-rejoin_start;
     var deadtime = Date.now() - i.deadtime;
-    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end} \n`;
+    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end}, filesize is ${filesize}bytes \n`;
+   
     fs.appendFile('./app_l_stop.txt',endtime)
       .then(()=>{
         return fs.readFile('./app_l_stop.txt')

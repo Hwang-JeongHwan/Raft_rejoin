@@ -55,7 +55,7 @@ var orderer5 = '{"id":"orderer5","state":"follower","term":1} '; //JSON형식으
 if (orderer5.state == 'leader'){
   random1 = 100
 } else{
-  random1 = 130
+  random1 = 150
 }
 var orderer_parse = JSON.parse(orderer5);
 
@@ -67,7 +67,7 @@ client.bind({
 
   
   const check=(value,state,array,rejoin,wait)=>{
-    if(value == 20 && state == 'follower' ){
+    if(value == 30 && state == 'follower' ){
       console.log(value,'dead!!!!\n\n\n\n\n\n\n\n')
       orderer_parse.state = 'dead'; // 오더러를 죽이고
       deadtime = Date.now();
@@ -99,7 +99,7 @@ client.bind({
             
             });
   
-          },500000);
+          }, 500000);
 
 
 
@@ -220,7 +220,7 @@ client.on('message', (msg, rinfo) => {
 
   } //js_array.logindex==i.logindex
   // i.logindex <= 9
-    if((i.logindex <= 20 ||js_array.logindex==i.logindex )&&orderer_parse.state =='rejoin'){ //장부복사가 끝낫다고 보내야함 
+    if((i.logindex <= 30 ||js_array.logindex==i.logindex )&&orderer_parse.state =='rejoin'){ //장부복사가 끝낫다고 보내야함 
       var copy_finish = `{"id":"${i.id}","key":"${i.key}","value":${i.value},"logindex":${i.logindex},"term":${orderer_parse.term},
       "copy":"finish","favorite1port":${i.favorite1port},"finish":"finish", "deadtime" : ${deadtime}}`;
       var finish = JSON.parse(copy_finish);
