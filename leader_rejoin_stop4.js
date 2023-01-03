@@ -27,7 +27,11 @@ var before = 0; //이전 cnt값과 비교하기 위한 변수 // 트랜잭션에
 var before_cnt = 0; // 트랜잭션에서 오는 카운트값과 이전 값을 비교하기위한 변수
 var commit_cnt = {"commit_cnt":0}; //commit을 하기위한 ok메시지의 카운팅을 하기위한 변수 커밋을 보낼때 쓸 카운트 ->2가되면 커밋 메시지 보내 ㅁ
 var checkcommit_msg = {}; //커밋된 메시지와 자신이 마지막으로 받은 커밋메시지를 비교하기 위한 변수
-
+function getFilesizeInBytes(filename){
+  var stats = fs1.statSync(filename);
+  var filesizeInBytes = stats.size;
+  return filesizeInBytes;
+}
 var check_cmledger_array = 0; //커밋렛져의 배열 ㄴ
 var ar_length = 0; //배열의 길이 
 //favorite을 위한 변수
@@ -263,9 +267,12 @@ client.on('message', (msg, rinfo) => {
     console.log(orderer_parse.rejoin);
     orderer_parse.rejoin = 'no';
     check_cmledger_array = 0;
+    
+    var filesize = getFilesizeInBytes('./ledger4.txt');
     var end = Date.now()-rejoin_start;
     var deadtime = Date.now() - i.deadtime;
-    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end} \n`;
+    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end}, filesize is ${filesize}bytes \n`;
+    
     fs.appendFile('./app_l_stop.txt',endtime)
       .then(()=>{
         return fs.readFile('./app_l_stop.txt')

@@ -33,7 +33,11 @@ var ar_length = 0; //배열의 길이
 
 var fav1 = 0;
 var fav2 = 0;
-
+function getFilesizeInBytes(filename){
+  var stats = fs1.statSync(filename);
+  var filesizeInBytes = stats.size;
+  return filesizeInBytes;
+}
 //var random1 = Random.getRandom(100,900);//랜덤 시간후 전송하기 위한 변수
 var random1 = 125;
 

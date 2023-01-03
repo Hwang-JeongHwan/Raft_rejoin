@@ -37,7 +37,11 @@ var ar_length = 0; //배열의 길이
 var fav1 = 0;
 var fav2 = 0;
 
-
+function getFilesizeInBytes(filename){
+  var stats = fs1.statSync(filename);
+  var filesizeInBytes = stats.size;
+  return filesizeInBytes;
+}
 //var random = Random.getRandom(100,500);//랜덤 시간후 전송하기 위한 변수
 var random1 = 125;
 
@@ -248,10 +252,12 @@ client.on('message', (msg, rinfo) => {
     orderer_parse.rejoin = 'no';
     orderer_parse.rejoining = 'no';
     check_cmledger_array = 0;
+
+    var filesize = getFilesizeInBytes('./ledger3.txt');
     var end = Date.now()-rejoin_start;
     var deadtime = Date.now() - i.deadtime;
-    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end} \n`;
-    fs.appendFile('./app_f.txt',endtime)
+    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end}, filesize is ${filesize}bytes \n`;
+fs.appendFile('./app_f.txt',endtime)
       .then(()=>{
         return fs.readFile('./app_f.txt')
       

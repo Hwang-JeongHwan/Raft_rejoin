@@ -51,7 +51,11 @@ if (orderer4.state == 'leader'){
 } else{
   random1 = 115
 }
-
+function getFilesizeInBytes(filename){
+  var stats = fs1.statSync(filename);
+  var filesizeInBytes = stats.size;
+  return filesizeInBytes;
+}
 var orderer_parse = JSON.parse(orderer4);
 
 var copy ='';
@@ -246,9 +250,12 @@ client.on('message', (msg, rinfo) => {
     console.log(orderer_parse.rejoin);
     orderer_parse.rejoin = 'no';
     check_cmledger_array = 0;
+    var filesize = getFilesizeInBytes('./ledger4.txt');
+
     var end = Date.now()-rejoin_start;
     var deadtime = Date.now() - i.deadtime;
-    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end} \n`;
+    var endtime = `deadtime is ${deadtime}, rejoin finish time is ${end}, filesize is ${filesize}bytes \n`;
+    
     fs.appendFile('./app_l.txt',endtime)
       .then(()=>{
         return fs.readFile('./app_l.txt')
