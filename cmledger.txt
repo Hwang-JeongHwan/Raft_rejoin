@@ -618,8 +618,3 @@
 {"id":"app","key":"x","value":619,"logindex":618}
 {"id":"app","key":"x","value":620,"logindex":619}
 {"id":"app","key":"x","value":621,"logindex":620}
-{"id":"app","key":"x","value":622,"logindex":621}
-{"id":"app","key":"x","value":623,"logindex":622}
-{"id":"app","key":"x","value":624,"logindex":623}
-{"id":"app","key":"x","value":625,"logindex":624}
-{"id":"app","key":"x","value":626,"logindex":625}
